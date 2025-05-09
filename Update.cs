@@ -9,6 +9,9 @@ namespace BringBackOldScoreboard
     {
         public static void Postfix()
         {
+            var pnlRank = GameObject.Find("UI/Standerd/PnlPreparation/Panels/PnlRankLocalization/Pc/PnlRank").GetComponent<PnlRank>();
+            pnlRank.OnClickRestLevelConfig();
+
             var selfRank = GameObject.Find("UI/Standerd/PnlPreparation/Panels/PnlRankLocalization/Pc/PnlRank/Mask/ImgBaseDarkP/ImgTittleBaseP/ScvRank/PlayerRankCell_4-3");
             selfRank.transform.localPosition = new Vector3(0, -336, 0);
 

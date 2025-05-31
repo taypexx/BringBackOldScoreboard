@@ -1,8 +1,7 @@
 ﻿using System.Reflection;
-using MelonLoader;
 using Main = BringBackOldScoreboard.Main;
 
-[assembly: MelonInfo(typeof(Main), "BringBackOldScoreboard", "1.0.0", "taypexx")]
+[assembly: MelonInfo(typeof(Main), "BringBackOldScoreboard", Main.ModVersion, "taypexx")]
 [assembly: MelonGame("PeroPeroGames", "MuseDash")]
 
 [assembly: AssemblyTitle("BringBackOldScoreboard")]
@@ -14,5 +13,5 @@ using Main = BringBackOldScoreboard.Main;
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion(Main.ModVersion + ".0")]
+[assembly: AssemblyFileVersion(Main.ModVersion + ".0")]
